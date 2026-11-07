@@ -1,0 +1,7 @@
+services:
+  blog:
+    # 本地开发时自动使用此配置覆盖 docker-compose.yml
+    # 本地改代码想跑新构建: docker compose up -d --build
+    build:
+      context: .
+      dockerfile: Dockerfile
